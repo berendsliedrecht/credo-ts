@@ -1,5 +1,20 @@
 # Changelog
 
+## 0.6.0
+
+### Minor Changes
+
+- 14673b1: Remove dependency on `abort-controller` library. Abort Controller has been supported on all platforms for quite some time already.
+- 5f08bc6: feat: allow dynamicaly providing x509 certificates for all types of verifications
+
+### Patch Changes
+
+- 2d10ec3: fix: presentation exchange handling when multiple mdocs in presentation definition
+- 13cd8cb: feat: support node 22
+- 607659a: feat: fetch sd-jwt type metadata
+- 2d10ec3: fix: issue where all available credentials were selected for queried DIF PEX definition. Now it only selects `needsCount` credentials, so it won't disclose more credentials than neccesary.
+- e80794b: fix: error during shutdown of agent in React Native due to usage of unavailable event method on socket `.once`
+
 ## 0.5.13
 
 ### Patch Changes
